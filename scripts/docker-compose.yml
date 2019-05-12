@@ -20,7 +20,7 @@ grafana:
   links:
     - influxdb
   volumes:
-    - ${GRAFANA_DATA_LOCATION}:/var/lib/grafana
+    - ${GRAFANA_DATA_LOCATION}:/data
     - ${PWD}/provisioning:/grafana-conf
   env_file:
     - .env
